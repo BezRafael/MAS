@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contaminação Cruzada</title>
+
+    <link rel="stylesheet" href="assets/css/detalhes.css">
+    <script src="assets/js/script.js" defer></script>
+    <script src="assets/js/detalhes.js" defer></script>
+</head>
+<body>
+
+    <main id="principal">
+        <header id="barra_inicial">
+            <div id="conteinerEsquerdo">
+                <a href="index.html"><h1 id="titulo" >MEU ACOMPANHANTE SEGURO</h1></a>
+            </div>
+            
+            <div id="conteinerDireito">
+                <nav id="barra_acessibilidade">
+                    <button class="botao_acessibilidade" id="aumentar_fonte" class="redimensionar_fonte" title="aumentar fonte">A+</button>
+                    <button class="botao_acessibilidade" id="diminuir_fonte" class="redimensionar_fonte" title="diminuir fonte">A-</button>
+                    <button class="botao_acessibilidade" onclick='lightMode()'>
+                        <img src="assets/images/icon_modoClaro.png" alt="" class="icones_tema" title="Modo Claro">
+                    </button>
+                    <button class="botao_acessibilidade" onclick="darkMode()">
+                        <img src="assets/images/icon_modoNoturno.png" alt="" class="icones_tema" title="Modo Escuro">
+                    </button>
+                </nav>
+            </div>
+        </header>
+
+    <hr id="hr_inicio">
+
+    <section id="destaque">
+        <div id="conteinerDestaque">
+            <div id="destaque_texto">
+                <h1>Hospital Santa Catarina</h1>
+                <h3>Segurança e Bem-Estar</h3>
+            </div>
+            <div>
+                <img src="assets/images/img_acompanhanteOficial.png" alt="" id="destaque_imagem">
+            </div>
+        </div>
+        </section>
+    
+        <main id="conteudo">
+            <h1 id="titulo_conteudo">Contaminação Cruzada</h1>
+    
+            <main id="videoConteudo">
+                <iframe src="https://www.youtube.com/embed/g2UhAikq80c" frameborder="0" id="video"></iframe>
+            </main>
+           
+            <main id="textoConteudo">
+                <p id="texto">
+                        <strong>USO DAS LUVAS:</strong>
+                    <br>
+                        1. Ao Cuidar do Paciente: Sempre use luvas ao tocar em feridas, trocar curativos, ou auxiliar o paciente em atividades que envolvam contato com fluidos corporais.
+                    <br>
+                    <br>
+                        2. Ao Lidar com Materiais Contaminados: Use luvas ao manusear roupa de cama suja, utensílios médicos, ou qualquer outro material que possa estar contaminado.
+                    <br>
+                    <br>
+                        3. Higiene Pessoal do Paciente: Ao ajudar o paciente com higiene pessoal, como banho ou troca de fraldas, é obrigatório o uso de luvas. Substitua as luvas imediatamente se rasgarem ou se ficarem contaminadas.
+                    <br>
+                    <br>
+                        4. Higienização Pós-Uso: Após retirar e descartar as luvas, higienize as mãos novamente com água e sabão ou álcool em gel.
+                    <br>
+                    <br>
+                       <strong>DICAS:</strong>
+                    <br>
+                        1. Não Reutilize Luvas: As luvas de procedimento são de uso único. Nunca reutilize luvas descartáveis.
+                    <br>
+                    <br>
+                        2. Evite Tocar o Rosto: Não toque seu rosto ou ajuste a máscara enquanto estiver usando luvas.
+                    <br>
+                    <br>
+                        <strong>PÓS USO DA MÁSCARA:</strong>
+                    <br>
+                    1. Troca e Armazenamento: Troque a máscara se ela estiver úmida, suja ou danificada. 
+                    <br>
+                    <br>
+                    2. Não reutilize máscaras descartáveis. Se estiver usando uma máscara de tecido, lave-a diariamente com água e sabão ou detergente, secando-a completamente antes do próximo uso. 
+                    <br>
+                    <br>
+                    <strong>ATENÇÃO:</strong> Respeite as normas e orientações do hospital quanto ao uso de Equipamentos de Proteção Individual (EPI's). O uso correto da máscara é um gesto de cuidado e responsabilidade. Ao seguir essas orientações, você contribui para a segurança e bem-estar de todos dentro do ambiente hospitalar. Lembre-se: o uso correto da máscara salva vidas!
+
+
+                </p>
+                <button id="BotaoAudio"><img src="assets/images/icon_audio.png" alt="" id="imagemAudio"></button>
+                <!-- Imagem usada para o botão de parar leitura -->
+                <img src="assets/images/icon_pausa.png" alt="Parar Leitura" id="imagemAudioStop" style="display:none;">
+            </main>
+    
+        </main>
+        <h1 id="titulo_proximoConteudo">Próximo Conteúdo</h1>
+        
+        <section id="barra_proximoConteudo">
+            <a href="detalhes.html">
+                <img src="assets/images/img_proxConteudo-usoEpis.jpeg" alt="" class="img_conteudo">
+                <h5 class="titulo_conteudo">Uso de EPI'S</h5>
+            </a>
+    
+            <a href="detalhes3.html">
+                <img src="assets/images/img_proxConteudo-areaRisco.jpeg" alt="" class="img_conteudo">
+                <h5 class="titulo_conteudo">Áreas de Isolamento</h5>
+            </a>
+    
+            <a href="detalhes4.html">
+                <img src="assets/images/img_proxConteudo-fluxoAlimentos.jpeg" alt="" class="img_conteudo">
+                <h5 class="titulo_conteudo">Fluxo de Alimentos</h5>
+            </a>
+        </section>
+    
+    <hr id="hr_rodape">
+    </main>
+
+    <footer id="rodape">
+        <nav id="hospital">
+            <h2 class="titulo-footer">Hospital Santa Catarina</h2>
+            <p class="paragrafo-footer">Regras e Normas Hospitalares</p>
+        </nav>
+
+        <nav id="endereco">
+            <h2 class="titulo-footer">Endereço</h2>
+            <p class="paragrafo-footer">Rua Araquari, S/N - Conjunto Santa Catarina - Potengi - Natal / RN</p>
+        </nav>
+
+        <nav id="contato">
+            <h2 class="titulo-footer">Contato:</h2>
+            <p class="paragrafo-footer">(84) 3232-7701 / 7702 / 7721 / 7723</p>
+        </nav>
+
+        <nav >
+            <figure id="conteinerImg">
+                <img id="logo-senac" src="assets/images/Img_senac.png" alt="">
+            </figure>
+        </nav>
+    </footer>
+</body>
+</html>

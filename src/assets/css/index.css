@@ -1,0 +1,1282 @@
+::-webkit-scrollbar{
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #58BDB2;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-track{
+    background: #FBEEE5;
+}
+
+#principal  {
+    background-image: url('');
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.0);
+}
+
+body.darkMode #principal {
+    background-image: linear-gradient(rgb(15, 29, 28, 0.9), rgb(15, 29, 28, 0.8)), url('assets/images/fundo-site.jpeg');
+}
+
+body {
+    background-color: #FBEEE5;
+    transition: 600ms;
+}
+
+/*Barra Inicial onde agrupa título, acessibilidae e login*/
+#barra_inicial{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+
+#conteinerEsquerdo{
+    display: flex;
+    margin-left: 20px;
+    margin-right: 420px;
+    padding-top: 24px;
+}
+
+#titulo{
+    color: #313040;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#conteinerDireito{
+    display: flex;
+    margin-right: 20px;
+    padding-top: 24px
+}
+
+#barra_acessibilidade{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 7px;
+    background-color: #58bdb2;
+    border-radius: 30px;
+    width: 250px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.botao_acessibilidade{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8px;
+    border-radius: 20px;
+    border: none;
+    background-color: #58bdb2;
+    color: #313040;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+
+.icones_tema{
+    width: 35px;
+    height: 35px;
+}
+
+#icone_login{
+    width: 35px;
+    height: 35px;
+}
+
+
+#botao_login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    margin-top: 5px;
+    background-color: #58BDB2;
+    border: none;
+    border-radius: 50px;
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+}
+
+.botao_acessibilidade:hover{
+    background-color: #9cd8db;
+    transition: 300ms;
+}
+
+#botao_login:hover{
+    background-color: #9cd8db;
+    transition: 300ms;
+}
+
+/*HR que fica abaixo da barra inicial*/
+#hr_inicio{
+    border: none;
+    background-color: #58bdb2;
+    height: 4px;
+    margin-top: 20px;
+    margin-bottom: 56px;
+}
+
+/*Conteiner do Destaque */
+#destaque{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/*Ajuste da Imagem do Destaque*/
+#conteinerDestaque{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #58BDB2;
+    border-radius: 20px;
+    width: 1249px;
+    height: 522px;
+}
+
+#destaque_texto{
+    width: 650px;
+    margin-left: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 38px;
+    color: #FBEEE5;
+}
+
+#destaque_imagem{
+    border-radius: 55%;
+    margin-right:10px;
+    width: 515px;
+    height: 512px;
+}
+
+#titulo_atencaoRiscos{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    color: #313040;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+#barra_atencaoRiscos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    margin-bottom: 250px;
+    background-color: #58BDB2;
+    height: 200px;
+    gap: 150px;
+}
+
+@keyframes flutuante{
+    0%{
+        transform: translateY(0px);
+    }
+    
+    
+    50%{
+        transform: translateY(-20px);
+    }
+}
+
+.botaoAbrirDialog{
+    width: 300px;
+    height: 400px;
+    border-radius: 40px;
+    border: none;
+    background-color: transparent;
+}
+
+.botaofecharDialog{
+    text-align: center;
+    width: 100px;
+    height: 50px;
+    font-size: 35px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 50px;
+    border: 3px solid #313040;
+    background-color: #FBEEE5;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+
+.BotaoAudio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -50px;
+    margin-left: 1120px;
+    border-radius: 50px;
+    border: none;
+    background-color: #58BDB2;
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.imagemAudio{
+    width: 40px;
+    height: 40px;
+}
+
+.BotaoAudio:hover{
+    background-color: #9cd8db;
+    transition: 300ms;
+}
+
+.botaofecharDialog:hover{
+    background-color: #9cd8db;
+}
+
+.dialogRisco{
+    text-align: center;
+    width: 100%;
+    height: 380px;
+    padding-top: 40px;
+    z-index: 10;
+    border-radius: 20px;
+    border: 8px solid #58BDB2;
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #313040;
+    background-color: #FBEEE5;
+    overflow: auto;
+}
+
+
+.img_riscos{
+    width: 300px;
+    height: 400px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-bottom: -5px;
+    animation: flutuante 4s infinite ease-out;
+    cursor: pointer;
+}
+
+.titulo_risco{
+    text-align: center;
+    padding-top: 5px;
+    background-color: #58BDB2;
+    color: #313040;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height: 35px;
+    font-size: 22px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation: flutuante 4s infinite ease-out;
+    cursor: pointer;
+}
+
+#secaoConteudo{
+    display: none;
+    /*
+    display: flex;
+    align-items: center;
+    background-color: #58BDB2;
+    height: 100px;
+    text-align: center;
+    justify-content: center;
+    margin-top: 100px;
+    color: #313040;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    */
+    }
+
+
+/*Conteiner geral dos conteúdos*/
+.conteudo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 400px;
+    margin-top: 50px;
+}
+
+/*Área do texto dentro de conteúdo*/
+.areaTexto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid #58BDB2;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width: 620px;
+}
+
+/*Título do conteudo dentro de areaTexto*/
+.titulo_conteudo{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 45px;
+    font-weight: bold;
+    color: #313040;
+    margin-bottom: 10px;
+}
+
+/*Paragrafo do conteudo dentro de areaTexto*/
+.paragrafo_conteudo{
+    text-align: center;
+    width: 500px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #313040;
+    font-size: 1.5em;
+    line-height: 30px ;
+    margin-bottom: 5px;
+    overflow: auto;
+}
+
+/*Botão de saibaMais dentro de areaTexto*/
+.saibaMais{
+    background-color: #FBEEE5;
+    border: 3px solid #313040;
+    color: #313040;
+    width: 150px;
+    height: 60px;
+    margin-left: 400px;
+    border-radius: 15px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.audioConteudo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -55px;
+    margin-left: 50px;
+    border-radius: 50px;
+    border: none;
+    background-color: #58BDB2;
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.img_audioConteudo{
+    width: 40px;
+    height: 40px;
+}
+
+/*Efeito do botão saibaMais*/
+.saibaMais:hover{
+    background-color: #9cd8db;
+    transition: 300ms;
+}
+
+.audioConteudo:hover{
+    background-color: #9cd8db;
+    transition: 300ms;
+}
+
+/*Área da imagem dentro de conteúdo*/
+.areaImg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FBEEE5;
+    border: 4px solid #58BDB2;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 620px;
+}
+
+.imagemConteudo{
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;
+    width: 615px;
+    height: 394px;
+}
+
+/*HR que fica abaixo da barra conteúdo*/
+#hr_rodape{
+    border: none;
+    background-color: #58bdb2;
+    height: 4px;
+    margin-top: 100px;
+    margin-bottom: 0px;
+}
+
+#rodape{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 320px;
+}
+
+#hospital{
+    margin-left: 50px;
+}
+
+#endereco{
+    margin-left: 120px;
+    margin-right: 80px;
+}
+
+#contato{
+    margin-left: 80px;
+    margin-right: 100px;
+}
+
+#logo-senac{
+    margin-right: 50px;
+    width: 150px;
+    height: 90px;
+}
+
+.titulo-footer{
+    color: #313040;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.paragrafo-footer{
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 170px;
+}
+
+
+
+@media (max-width: 374px) {
+    #barra_inicial{
+        flex-direction: column;
+        height: 50px;
+    }
+    
+    #conteinerEsquerdo{
+        display: flex;
+        margin-top: 70px;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-top: 0px;
+    }
+    
+    #titulo{
+        text-align: center;
+        font-size: 25px;
+    }
+    
+    #conteinerDireito{
+        margin-left: 40px;
+        margin-right: 20px;
+        padding-top: 0px
+    }
+    
+    #barra_acessibilidade{
+        margin-top: 1px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        width: 220px;
+        height: 40px;
+        margin-right: 20px;
+    }
+    
+    .botao_acessibilidade{
+        margin: 15px;
+        border-radius: 20px;
+        font-size: 25px;
+        width: 25px;
+        height: 25px;
+    }
+    
+    
+    .icones_tema{
+        width: 35px;
+        height: 35px;
+    }
+     
+    #botao_login{
+        display: none;
+    }
+    
+    #conteinerDestaque{
+        width: 100%;
+        height: 100%;
+    }
+    
+    #destaque_texto{
+        width: 500px;
+        margin-left: 30px; 
+        font-size: 12px;
+    }
+    
+    #destaque_imagem{
+        margin-right:10px;
+        width: 100%;
+        height: 100%;
+    }
+    
+    
+    #titulo_atencaoRiscos{
+        text-align: center;
+        font-size: 30px;
+        border: 5px solid #58BDB2;
+        border-radius: 40px;
+        height: 100%;
+        margin-top: 50px;
+    }
+
+    #barra_atencaoRiscos{
+        flex-direction: column;
+        margin-top: 440px;
+        margin-bottom: 450px;
+        background-color: transparent;
+        gap: 40px;
+    }
+
+    .botaoAbrirDialog{
+        width: 190px;
+        height: 300px;
+        border-radius: 40px;
+        border: none;
+        background-color: transparent;
+    }
+    
+    .botaofecharDialog{
+        text-align: center;
+        width: 80px;
+        height: 30px;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        border-radius: 50px;
+        border: 3px solid #313040;
+        background-color: #FBEEE5;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+    
+    .BotaoAudio{
+        margin-top: -30px;
+        margin-left: 240px;
+        width: 80px;
+        height: 30px;
+    }
+
+    .imagemAudio{
+        width: 30px;
+        height: 30px;
+    }
+    
+    .dialogRisco{
+        margin-top: 20px;
+        padding-top: 40px;
+        width: 100%;
+        height: 280px;
+        border: 4px solid #58BDB2;
+        font-size: 18px;
+    }
+
+    .img_riscos{
+        width: 200px;
+        height: 300px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px ;
+        border-bottom-right-radius: 20px;
+        margin-bottom: -30px;
+    }
+
+    .titulo_risco{
+        width: 200px;
+        text-align: center;
+        padding-top: 1px;
+        height: 35px;
+        font-size: 22px;
+       
+    }
+    
+    #secaoConteudo{
+        display: flex;
+        align-items: center;
+        height: 100%;
+        text-align: center;
+        justify-content: center;
+        margin-top: 100px;
+        color: #313040;
+        border: 5px solid #58BDB2;
+        border-radius: 40px;
+        font-size: 30px;
+        font-weight: bold;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    }
+
+
+    /*ÁREA REFERENTE AO CONTEÚDO*/
+    .conteudo{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        height: 100%;
+        margin-top: 50px;
+    }
+
+    .areaImg{
+        width: 100%;
+        height: 280px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    
+    .imagemConteudo{
+        width: 100%;
+        height: 277px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+
+    .areaTexto{
+        width: 100%;
+        height: 500px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+
+    }
+    
+    .titulo_conteudo{
+        text-align: center;
+        margin-top: -20px;
+        margin-bottom: 10px;
+    }
+    
+    /*Paragrafo do conteudo dentro de areaTexto*/
+    .paragrafo_conteudo{
+        font-size: 1.2em;
+        width: 100%;
+        text-align: center;
+    }
+
+    .saibaMais{
+        width: 150px;
+        height: 100%;
+        margin-left: 150px;
+        margin-top: 15px;
+        font-size: 20px;
+    }
+
+    .audioConteudo{
+        margin-top: -25px;
+        margin-left: -150px;
+        width: 80px;
+        height: 40px;
+        
+    }
+
+    .img_audioConteudo{
+        width: 30px;
+        height: 30px;
+    }
+
+    #hr_rodape{
+        margin-top: 70px;
+        margin-bottom: 0px;
+    }
+
+    /*ÁREA REFERENTE AO RODAPÉ*/
+    #rodape{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        margin-top: 30px;
+        gap: 50px;
+    }
+
+    #hospital{
+        width: 200px;
+        margin-left: -25px;
+    }
+    
+    #endereco{
+        margin-left: 20px;
+        
+    }
+    
+    #contato{
+        margin-left: 40px;
+
+    }
+    
+    #logo-senac{
+        margin-right: 50px;
+        width: 150px;
+        height: 90px;
+    }
+    
+ }
+
+
+ @media (min-width: 768px) and (max-width: 900px){
+    /*ÁREA BARRA INICIAL*/
+    #conteinerEsquerdo{
+        margin-left: 20px;
+        margin-right: 80px;
+        padding-top: 20px;
+        
+    }
+    
+    #titulo{
+        font-size: 28px;
+    }
+    
+    #conteinerDireito{
+        margin-right: 2px;
+        margin-left: 0px;
+        padding-top: 20px
+    }
+    
+    #barra_acessibilidade{
+        margin-top: 7px;
+        border-radius: 30px;
+        width: 250px;
+        height: 50px;
+        margin-right: 20px;
+    }
+
+    #botao_login{
+        display: none;
+    }
+
+    /*ÁREA DO BANNER*/
+    #conteinerDestaque{
+        flex-direction: row;
+        border-radius: 20px;
+        width: 100%;
+        height: 100%;
+    }
+    
+    #destaque_texto{
+        width: 100%;
+        margin-left: 30px;
+        font-size: 30px;
+    }
+    
+    #destaque_imagem{
+        border-radius: 55%;
+        margin-right:10px;
+        width: 100%;
+        height: 100%;
+    }
+
+    /*ÁREA DOS RISCOS*/
+    #titulo_atencaoRiscos{
+        text-align: center;
+        font-size: 50px;
+        align-items: center;
+        border: 5px solid #58BDB2;
+        border-radius: 40px;
+        height: 100%;
+    }
+    
+    #barra_atencaoRiscos{
+        flex-direction: column;
+        margin-top: 830px;
+        margin-bottom: 830px;
+        background-color: transparent;
+        height: 200px;
+        gap: 80px;
+    }
+
+    .botaoAbrirDialog{
+        width: 100%;
+        height: 100%;
+        border-radius: 40px;
+        border: none;
+        background-color: transparent;
+    }
+    
+    .botaofecharDialog{
+        text-align: center;
+        width: 120px;
+        height: 50px;
+        font-size: 28px;
+        font-weight: bold;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        border-radius: 50px;
+        border: 4px solid #313040;
+        background-color: #FBEEE5;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+    
+    .BotaoAudio{
+        margin-top: -50px;
+        margin-left: 550px;
+        width: 120px;
+        height: 50px;
+    }
+
+    .imagemAudio{
+        width: 40px;
+        height: 40px;
+    }
+    
+    .dialogRisco{
+        margin-top: 20px;
+        padding-top: 40px;
+        text-align: center;
+        width: 100%;
+        height: 450px;
+        z-index: 10;
+        border-radius: 20px;
+        border: 5px solid #58BDB2;
+        font-size: 40px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #313040;
+        background-color: #FBEEE5;
+    }
+
+
+    .img_riscos{
+        width: 400px;
+        height: 500px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        margin-bottom: -22px;
+    }
+
+    .titulo_risco{
+        text-align: center;
+        padding-top: 2px;
+        height: 35px;
+        font-size: 22px;
+    }
+
+    #secaoConteudo{
+        display: flex;
+        align-items: center;
+        height: 100%;
+        text-align: center;
+        justify-content: center;
+        margin-top: 100px;
+        color: #313040;
+        border: 5px solid #58BDB2;
+        border-radius: 40px;
+        font-size: 50px;
+        font-weight: bold;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    }
+    
+    .conteudo{
+        flex-direction: column-reverse;
+        align-items: center;
+        height: 100%;
+        margin-top: 50px;
+    }
+
+    .areaImg{
+        width: 100%;
+        height: 520px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    
+    .imagemConteudo{
+        width: 100%;
+        height: 518px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+
+    .areaTexto{
+        width: 100%;
+        height: 480px;
+        margin-bottom: 30px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+
+    }
+    
+    .titulo_conteudo{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    
+    /*Paragrafo do conteudo dentro de areaTexto*/
+    .paragrafo_conteudo{
+        font-size: 1.9em;
+        width: 100%;
+        text-align: center;
+    }
+
+    .saibaMais{
+        width: 200px;
+        height: 100%;
+        margin-left: 100%;
+        margin-top: 20px;
+        border-radius: 15px;
+        font-size: 20px;
+    }
+
+    .audioConteudo{
+        margin-top: -25px;
+        margin-left: -150px;
+        width: 120px;
+        height: 45px;
+        
+    }
+
+    .img_audioConteudo{
+        width: 40px;
+        height: 40px;
+    }
+
+    #hr_rodape{
+        border: none;
+        height: 4px;
+        margin-top: 70px;
+        margin-bottom: 0px;
+    }
+
+
+    /*ÁREA REFERENTE AO RODAPÉ*/
+    #rodape{
+        flex-direction: row;
+        width: 100%;
+        height: 150px;
+        margin-top: 30px;
+    }
+
+    #hospital{
+        margin-left: 50px;
+    }
+    
+    #endereco{
+        margin-left: 30px;
+        margin-right: 20px;
+    }
+    
+    #contato{
+        margin-right: 30px;
+        margin-left: 20px;
+    }
+    
+    #logo-senac{
+        margin-right: 50px;
+        width: 150px;
+        height: 90px;
+    }
+ }
+
+ @media (min-width: 375px)and (max-width: 767px) {
+    
+    #barra_inicial{
+        flex-direction: column;
+        height: 50px;
+    }
+    
+    #conteinerEsquerdo{
+        margin-top: 70px;
+        margin-bottom: 10px;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-top: 20px;
+    }
+    
+    #titulo{
+        text-align: center;
+        font-size: 25px;
+    }
+    
+    #conteinerDireito{
+        margin-left: 40px;
+        margin-right: 20px;
+        padding-top: 0px
+    }
+    
+    #barra_acessibilidade{
+        margin-top: 3px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        width: 220px;
+        height: 40px;
+        margin-right: 20px;
+    }
+    
+    .botao_acessibilidade{
+        margin: 15px;
+        border-radius: 20px;
+        font-size: 25px;
+        width: 25px;
+        height: 25px;
+    }
+    
+    .icones_tema{
+        width: 35px;
+        height: 35px;
+    }
+     
+    #botao_login{
+        display: none;
+    }
+
+    #hr_inicio{
+        border: none;
+        background-color: #58bdb2;
+        height: 4px;
+        margin-top: 20px;
+        margin-bottom: 80px;
+    }
+
+    #conteinerDestaque{
+        flex-direction: row;
+        margin-bottom: -40px;
+        width: 100%;
+        height: 100%;
+    }
+    
+    #destaque_texto{
+        width: 100%;
+        margin-left: 30px;
+        font-size: 15px;
+    }
+    
+    #destaque_imagem{
+        border-radius: 55%;
+        margin-right:10px;
+        width: 100%;
+        height: 100%;
+    }
+    
+    #titulo_atencaoRiscos{
+        text-align: center;
+        font-size: 30px;
+        border: 5px solid #58BDB2;
+        border-radius: 40px;
+        height: 100%;
+    }
+    
+    #barra_atencaoRiscos{
+        flex-direction: column;
+        margin-top: 450px;
+        margin-bottom: 450px;
+        background-color: transparent;
+        height: 200px;
+        gap: 40px;
+    }
+
+
+    .botaoAbrirDialog{
+        width: 200px;
+        height: 300px;
+        border-radius: 40px;
+        border: none;
+        background-color: transparent;
+    }
+    
+    .botaofecharDialog{
+        text-align: center;
+        width: 80px;
+        height: 30px;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        border-radius: 50px;
+        border: 4px solid #313040;
+        background-color: #FBEEE5;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+    
+    .BotaoAudio{
+        margin-top: -30px;
+        margin-left: 270px;
+        width: 80px;
+        height: 30px;
+    }
+
+    .imagemAudio{
+        width: 30px;
+        height: 30px;
+    }
+    
+    .dialogRisco{
+        margin-top: 20px;
+        padding-top: 40px;
+        text-align: center;
+        height: 250px;
+        border-radius: 20px;
+        border: 3px solid #58BDB2;
+        font-size: 18px;
+    }
+
+    .img_riscos{
+        width: 200px;
+        height: 300px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        margin-bottom: -22px;
+    }
+
+    .titulo_risco{
+        text-align: center;
+        padding-top: 5px;
+        height: 35px;
+        font-size: 22px;
+    }
+
+    #secaoConteudo{
+        display: flex;
+        align-items: center;
+        height: 100%;
+        text-align: center;
+        justify-content: center;
+        margin-top: 100px;
+        color: #313040;
+        border: 5px solid #58BDB2;
+        border-radius: 40px;
+        font-size: 30px;
+        font-weight: bold;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    }
+
+
+    /*ÁREA REFERENTE AO CONTEÚDO*/
+    .conteudo{
+        flex-direction: column-reverse;
+        height: 100%;
+        margin-top: 50px;
+    }
+
+    .areaImg{
+        width: 100%;
+        height: 300px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    
+    .imagemConteudo{
+        width: 100%;
+        height: 297px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+
+    .areaTexto{
+        width: 100%;
+        height: 500px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+
+    }
+    
+    .titulo_conteudo{
+        text-align: center;
+        margin-top: -20px;
+        margin-bottom: 10px;
+    }
+    
+    /*Paragrafo do conteudo dentro de areaTexto*/
+    .paragrafo_conteudo{
+        font-size: 1.2em;
+        width: 100%;
+        text-align: center;
+    }
+
+    .saibaMais{
+        width: 150px;
+        height: 100%;
+        margin-left: 150px;
+        margin-top: 15px;
+        font-size: 20px;
+    }
+
+    .audioConteudo{
+        margin-top: -27px;
+        margin-left: -150px;
+        width: 80px;
+        height: 40px;
+        
+    }
+
+    .img_audioConteudo{
+        width: 30px;
+        height: 30px;
+    }
+
+    #hr_rodape{
+        border: none;
+        background-color: #58bdb2;
+        height: 4px;
+        margin-top: 70px;
+        margin-bottom: 0px;
+    }
+
+    /*ÁREA REFERENTE AO RODAPÉ*/
+    #rodape{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        margin-top: 30px;
+        gap: 50px;
+    }
+    
+    #endereco{
+        margin-left: 20px;
+        
+    }
+    
+    #contato{
+        margin-left: 40px;
+
+    }
+    
+    #logo-senac{
+        margin-right: 50px;
+        width: 150px;
+        height: 90px;
+    }
+    
+ }
+

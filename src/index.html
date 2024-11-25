@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title> 
+    <link rel="stylesheet" href="/src/assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <script src="assets/js/index.js" defer></script>
+    <script src="assets/js/script.js" defer></script>
+</head>
+<body>
+    <main class="principal" id="principal">
+        <header id="barra_inicial">
+            <div id="conteinerEsquerdo">
+                <h1 id="titulo" >MEU ACOMPANHANTE SEGURO</h1>
+            </div>
+            
+            <div id="conteinerDireito">
+                <nav id="barra_acessibilidade">
+                    <button class="botao_acessibilidade" id="aumentar_fonte" class="redimensionar_fonte" title="Aumentar Fonte">A+</button>
+                    <button class="botao_acessibilidade" id="diminuir_fonte" class="redimensionar_fonte" title="Diminuir Fonte">A-</button>
+                    <button class="botao_acessibilidade" onclick='lightMode()'>
+                        <img src="assets/images/icon_modoClaro.png" alt="" class="icones_tema" title="Modo Claro">
+                    </button>
+                    <button class="botao_acessibilidade" onclick="darkMode()">
+                        <img src="assets/images/icon_modoNoturno.png" alt="" class="icones_tema" title="Modo Escuro">
+                    </button>
+                </nav>
+            </div>
+        </header>
+
+        <hr id="hr_inicio">
+
+            <section id="destaque">
+                <div id="conteinerDestaque">
+                    <div id="destaque_texto">
+                        <h1>Hospital Santa Catarina</h1>
+                        <h3>Segurança e Bem-Estar</h3>
+                    </div>
+                    <div>
+                        <img src="assets/images/img_acompanhanteOficial.png" alt="" id="destaque_imagem" title="Banner Principal">
+                    </div>
+                </div>
+            </section>
+
+        <h1 id="titulo_atencaoRiscos">Atenção aos Riscos</h1>
+
+            <section id="barra_atencaoRiscos">
+                <div>
+                    <dialog class="dialogRisco" id=dialogRisco1>
+                        <h1>Contaminação</h1>
+
+                        <p class="textoDialogo">
+                            Cuidados com Alimentos e Bebidas Lave bem as mãos antes de preparar ou
+                            consumir alimentos. Não consuma alimentos e bebidas do paciente, a menos que
+                            autorizado.
+                        </p>
+                       
+                        <button onclick="fecharDialog()" class="botaofecharDialog">X</button>
+
+                        <button class="BotaoAudio"><img src="assets/images/icon_audio.png" alt="" class="imagemAudio"></button>
+                        <!-- Imagem usada para o botão de parar leitura -->
+                        <img src="assets/images/icon_pausa.png" alt="Parar Leitura" id="imagemAudioStop" style="display:none;" >
+                        
+                    </dialog>
+                    
+                    <button onclick="abrirDialog()" class="botaoAbrirDialog">
+                        <img src="assets/images/img_cuidadoAlimentos.jpg" alt="" class="img_riscos" id="img_risco1" title="Contaminação">
+                        <h5 class="titulo_risco">Clique Aqui!</h5>
+                    </button>
+                </div>
+
+                <div>
+                    <dialog class="dialogRisco" id=dialogRisco2>
+                        <h1>Fluído Corporais</h1>
+
+                        <p class="textoDialogo">
+                            Sempre use luvas ao tocar em feridas, trocar curativos, ou auxiliar o
+                            paciente em atividades que envolvam contato com fluidos corporais(Sangue, urina...). 
+                        </p>
+
+                        <button onclick="fecharDialog2()" class="botaofecharDialog">X</button>
+
+                        <button class="BotaoAudio"><img src="assets/images/icon_audio.png" alt="" class="imagemAudio"></button>
+                        <!-- Imagem usada para o botão de parar leitura -->
+                        <img src="assets/images/icon_pausa.png" alt="Parar Leitura" id="imagemAudioStop" style="display:none;" >
+                
+                    </dialog>
+
+                    <button onclick="abrirDialog2()" class="botaoAbrirDialog">
+                        <img src="assets/images/img_curativo.jpg" alt="" class="img_riscos" id="img_risco2" title="Fluídos Corporais">
+                        <h5 class="titulo_risco">Clique Aqui!</h5>
+                    </button>
+                </div>
+
+                <div>
+                    <dialog class="dialogRisco" id=dialogRisco3>
+                        <h1>Emocionais</h1>
+
+                        <p class="textoDialogo">
+                            Acompanhar um ente querido no hospital pode ser 
+                            emocionalmente desgastante. O estresse e a ansiedade 
+                            podem afetar nossa saúde mental, comprometendo nossa 
+                            capacidade de cuidar do paciente e de nós mesmos.
+                        </p>
+
+                        <button onclick="fecharDialog3()" class="botaofecharDialog">X</button>
+
+                        <button class="BotaoAudio"><img src="assets/images/icon_audio.png" alt="" class="imagemAudio"></button>
+                        <!-- Imagem usada para o botão de parar leitura -->
+                        <img src="assets/images/icon_pausa.png" alt="Parar Leitura" id="imagemAudioStop" style="display:none;" >
+
+                    </dialog>
+
+                    <button onclick="abrirDialog3()" class="botaoAbrirDialog">
+                        <img src="assets/images/img_pessoaAbalada.jpg" alt="" class="img_riscos" id="img_risco3" title="Riscos Emocionais">
+                        <h5 class="titulo_risco">Clique Aqui!</h5>
+                    </button>
+                </div>
+            </section>
+
+            <h1 id="secaoConteudo">Conteúdos</h1>
+
+            <main class="conteudo">
+                <div class="areaTexto">
+                    <h4 class="titulo_conteudo" id="titulo_conteudo1">Uso de EPI'S</h4>
+                    <p class="paragrafo_conteudo" id="paragrafo_conteudo1">A falta de uso adequado de EPIs em instituições de saúde aumenta 
+                        os riscos de acidentes e contaminações. Melhorias necessárias incluem educação contínua, acesso facilitado aos EPIs, 
+                        descarte correto e auditorias regulares.
+                    
+                      
+                    </p>
+
+                    <a href="detalhes.html"><button class="saibaMais">Saiba Mais</button></a>
+                    <button class="audioConteudo">
+                        <img src="assets/images/icon_audio.png" alt="" class="img_audioConteudo">
+                    </button>
+                </div>
+
+                <div class="areaImg">
+                    <img src="assets/images/img_usoEPIs.jpeg" alt="" class="imagemConteudo" title="Imagem de Uso de Equipamentos de Proteção">
+                </div>
+            </main>
+
+            <main class="conteudo">
+                <div class="areaTexto">
+                    <h4 class="titulo_conteudo" id="titulo_conteudo2">Contaminação Cruzada</h4>
+                    <p class="paragrafo_conteudo" id="paragrafo_conteudo2">Contaminação cruzada é um risco grave devido a falhas na higiene, 
+                        compartilhamento de equipamentos e não seguir protocolos de isolamento.
+                    </p>
+                    <a href="detalhes2.html"><button class="saibaMais">Saiba Mais</button></a>
+                    <button class="audioConteudo">
+                        <img src="assets/images/icon_audio.png" alt="" class="img_audioConteudo">
+                    </button>
+                </div>
+
+                <div class="areaImg">
+                    <img src="assets/images/img_contaminaçãoCruzada.jpeg" alt="" class="imagemConteudo" title="Imagem de Contaminação Cruzada">
+                </div>
+            </main>
+
+            <main class="conteudo">
+                <div class="areaTexto">
+                    <h4 class="titulo_conteudo" id="titulo_conteudo3">Áreas de Isolamento</h4>
+                    <p class="paragrafo_conteudo" id="paragrafo_conteudo3">A sinalização de áreas de isolamento previnem a disseminação de doenças em 
+                        hospitais. Sinalizações claras, infraestrutura adequada, comunicação eficiente e conscientização são cruciais.</p>
+                    <a href="detalhes3.html"><button class="saibaMais">Saiba Mais</button></a>
+                    <button class="audioConteudo">
+                        <img src="assets/images/icon_audio.png" alt="" class="img_audioConteudo">
+                    </button>
+                </div>
+
+                <div class="areaImg">
+                    <img src="assets/images/img_áreasIsolamento.jpeg" alt="" class="imagemConteudo" title="Imagem de Áreas de Isolamento">
+                </div>
+            </main>
+
+            <main class="conteudo">
+                <div class="areaTexto">
+                    <h4 class="titulo_conteudo" id="titulo_conteudo4">Fluxo de Alimentos</h4>
+                    <p class="paragrafo_conteudo" id="paragrafo_conteudo4">O fluxo irregular de alimentos em hospitais compromete a segurança alimentar e 
+                        a saúde dos pacientes. Seguir normas de segurança, práticas de higiene rigorosas e realizar inspeções regulares é extremamente 
+                        necessário.</p>
+                    <a href="detalhes4.html"><button class="saibaMais">Saiba Mais</button></a>
+                    <button class="audioConteudo">
+                        <img src="assets/images/icon_audio.png" alt="" class="img_audioConteudo">
+                    </button>
+                </div>
+
+                <div class="areaImg">
+                    <img src="assets/images/img_fluxoAlimentos.jpeg" alt="" class="imagemConteudo" title="Imagem de Fluxo de Alimentos">
+                </div>
+            </main>
+
+        <hr id="hr_rodape">
+
+    </main>
+
+        <footer id="rodape">
+            <nav id="hospital">
+                <h2 class="titulo-footer">Hospital Santa Catarina</h2>
+                <p class="paragrafo-footer">Regras e Normas Hospitalares</p>
+            </nav>
+
+            <nav id="endereco">
+                <h2 class="titulo-footer">Endereço</h2>
+                <p class="paragrafo-footer">Rua Araquari, S/N - Conjunto Santa Catarina - Potengi - Natal / RN</p>
+            </nav>
+
+            <nav id="contato">
+                <h2 class="titulo-footer">Contato:</h2>
+                <p class="paragrafo-footer">(84) 3232-7701 / 7702 / 7721 / 7723</p>
+            </nav>
+
+            <nav >
+                <figure>
+                    <img id="logo-senac" src="assets/images/Img_senac.png" alt="" title="Imagem da Logomarca do Senac">
+                </figure>
+            </nav>
+        </footer>
+
+</body>
+</html>
